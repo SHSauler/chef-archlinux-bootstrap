@@ -26,3 +26,7 @@ knife bootstrap <node_ip/node_hostname> --ssh-user root --node-name <node_name> 
 Example:
 knife bootstrap 192.168.56.101 --ssh-user root --node-name arch01 -t archlinux-chef-client
 ```
+
+### Troubleshooting
+
+* If you don't have a chef server that gets DNS-resolved by the default DNS server your arch node uses, put an entry in arch node's `/etc/hosts` file
